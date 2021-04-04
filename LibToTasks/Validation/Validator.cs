@@ -12,13 +12,13 @@ namespace LibToTasks.Validation
             _logger = LogManager.GetCurrentClassLogger();
         }
 
-        public T CheckValue<T>(Func<T, bool> checking, T valueToChecking, bool withException = true) 
+        public bool CheckValue<T>(Func<T, bool> checking, T valueToChecking, bool withException = true) 
         {
             if (checking.Invoke(valueToChecking)) 
             {
                 _logger.Info("Value {0} passed checking", valueToChecking);
 
-                return valueToChecking;
+                return true;
             }            
 
             _logger.Error("Value {0} didn`t pass checking", valueToChecking);
@@ -28,7 +28,7 @@ namespace LibToTasks.Validation
                 throw new FormatException("Yuor value too small or big");
             }
 
-            return default;
+            return false;
         }
     }
 }
