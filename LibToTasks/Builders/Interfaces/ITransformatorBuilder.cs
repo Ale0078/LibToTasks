@@ -1,6 +1,6 @@
 ﻿using LibToTasks.Validation.Interfaces;
 
-namespace LibToTasks.Builders.Abstracts
+namespace LibToTasks.Builders.Interfaces
 {
     public interface ITransformatorBuilder
     {
