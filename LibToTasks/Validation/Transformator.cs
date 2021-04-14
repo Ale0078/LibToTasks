@@ -1,9 +1,11 @@
 ﻿using System;
 using NLog;
 
+using LibToTasks.Validation.Interfaces;
+
 namespace LibToTasks.Validation
 {
-    public class Transformator
+    public class Transformator : ITransformator//ToDo: interface
     {
         private ILogger _logger;
 
