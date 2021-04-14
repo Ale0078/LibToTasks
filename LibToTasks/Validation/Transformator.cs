@@ -5,7 +5,7 @@ using LibToTasks.Validation.Interfaces;
 
 namespace LibToTasks.Validation
 {
-    public class Transformator : ITransformator//ToDo: interface
+    internal class Transformator : ITransformator//ToDo: interface
     {
         private ILogger _logger;
 

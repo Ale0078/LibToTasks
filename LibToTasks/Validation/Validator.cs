@@ -5,7 +5,7 @@ using LibToTasks.Validation.Interfaces;
 
 namespace LibToTasks.Validation
 {
-    public class Validator : IValidator//ToDo: interface
+    internal class Validator : IValidator//ToDo: interface
     {
         private  ILogger _logger;
 
